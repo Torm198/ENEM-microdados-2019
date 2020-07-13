@@ -17,9 +17,12 @@ exploratoria <- function(x){
 }
 
 
-
-dados_exploratoria <- lapply(enem, summary)
+dados_exploratoria <- lapply(enem, exploratoria)
 
 
 
 openxlsx::write.xlsx(dados_exploratoria,'Exploratoria/Analise Exploratoria.xlsx')
+
+
+
+
